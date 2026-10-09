@@ -3,7 +3,7 @@
 
 An AI based pipeline designed to  restore faded, damaged, or corrupted historical photographs. This project utilizes a combination of advanced Stable Diffusion inpainting, ControlNet edge-conditioning, and dynamic computer vision algorithms to reconstruct missing image data while preserving original structural integrity.
 
-## 🧠 Core Algorithms & Concepts
+## Core Algorithms & Concepts
 
 ### 1. Conditioned Image Inpainting (Stable Diffusion + ControlNet)
 Unlike traditional generative AI that might hallucinate new features, this pipeline uses **ControlNet (Canny)** mapped to a **Stable Diffusion Inpainting** base model. 
@@ -23,7 +23,7 @@ The model incorporates heavy memory optimizations for constrained environments (
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 historical-restoration/
@@ -47,7 +47,7 @@ historical-restoration/
 
 ---
 
-## ⚙️ Workflow & Code Execution
+## Workflow & Code Execution
 
 ### 1. Installation
 Ensure you have the required libraries installed:
