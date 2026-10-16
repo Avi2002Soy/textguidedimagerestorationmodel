@@ -1,0 +1,37 @@
+models:
+  controlnet_id: "diffusers/controlnet-canny-sdxl-1.0"
+  inpaint_id: "diffusers/stable-diffusion-xl-1.0-inpainting-0.1"
+  lora_id: "ByteDance/SDXL-Lightning"
+  lora_weight_name: "sdxl_lightning_4step_lora.safetensors"
+  custom_lora_path: "models/lora_checkpoints" # Loaded automatically if weights exist
+  dtype: "float16"
+  variant: "fp16"
+
+optimization:
+  enable_xformers: true
+  cpu_offload: false
+  vae_slicing: true
+  vae_tiling: true
+
+inference:
+  num_steps: 4
+  guidance_scale: 1.5
+  controlnet_scale: 0.5
+  seed: 42
+  resolution: 1024
+
+training:
+  train_data_dir: "data/train/clean"
+  output_dir: "models/lora_checkpoints"
+  instance_prompt: "1920s vintage photograph, sepia tone, sharp details, high quality, authentic historical texture"
+  lora_rank: 8
+  lora_alpha: 16
+  learning_rate: 1.0e-4
+  epochs: 5
+  grad_accum_steps: 4
+  resolution: 1024
+
+post_processing:
+  enable: true
+  sharpness_factor: 1.5
+  contrast_factor: 1.2

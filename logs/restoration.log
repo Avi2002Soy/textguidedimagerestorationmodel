@@ -1,0 +1,8 @@
+2026-10-16 08:13:12,407 - INFO - [src.core.model_loader] - Initializing Real-Time SDXL models on cuda with torch.float16 precision...
+2026-10-16 08:13:14,270 - INFO - [src.core.model_loader] - Loading and fusing SDXL-Lightning 4-step LoRA...
+2026-10-16 08:13:39,601 - INFO - [src.core.model_loader] - Real-Time SDXL Pipeline loaded into VRAM successfully.
+2026-10-16 08:14:37,131 - INFO - [src.core.restoration] - Frame restored in 11.7s
+2026-10-16 08:16:00,947 - INFO - [src.core.restoration] - Frame restored in 8.77s
+2026-10-16 08:16:13,746 - INFO - [src.core.restoration] - Frame restored in 8.83s
+2026-10-16 08:16:30,617 - INFO - [src.core.restoration] - Frame restored in 8.9s
+2026-10-16 08:16:51,108 - INFO - [src.core.restoration] - Frame restored in 8.98s
